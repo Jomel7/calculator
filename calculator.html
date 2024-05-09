@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="brand">Villaester</h3>
+        <p class="quotes">Trusted brand in the whole world.</p>
+        <div class="row-1">
+            <input id="display" class="display color-3 rounded-top" type="text">
+        </div>
+        <div class="row-2">
+            <button class="square color-del" onclick="deleteOnecharacter()">DEL</button>
+            <button class="square color-1" onclick="clear_display()">AC</button>
+            <button class="square color-1" onclick="calculatePercentage()">%</button>
+            <button class="square color-4" onclick="operate('/')">/</button>    
+        </div>
+        <div class="row-3">
+            <button class="square color-2" onclick="insert_value(7)">7</button>
+            <button class="square color-2" onclick="insert_value(8)">8</button>
+            <button class="square color-2" onclick="insert_value(9)">9</button>
+            <button class="square color-4" onclick="operate('*')">x</button>
+        </div>
+        <div class="row-4">
+            <button class="square color-2" onclick="insert_value(4)">4</button>
+            <button class="square color-2" onclick="insert_value(5)">5</button>
+            <button class="square color-2" onclick="insert_value(6)">6</button>
+            <button class="square color-4" onclick="operate('-')">-</button>
+        </div>
+        <div class="row-5">
+            <button class="square color-2" onclick="insert_value(1)">1</button>
+            <button class="square color-2" onclick="insert_value(2)">2</button>
+            <button class="square color-2" onclick="insert_value(3)">3</button>
+            <button class="square color-4" onclick="operate('+')">+</button>
+        </div>
+        <div class="row-6">
+            <button class="rectangle color-2 rounded-bt" onclick="insert_value(0)">0</button>
+            <button class="square color-2" onclick="insert_value('.')">.</button>
+            <button class="square color-4 rounded-br" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>
